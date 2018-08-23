@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sudo yum install -y git
+git clone https://github.com/thegwynne/python-systemd-http-server
+cd python-systemd-http-server
+sudo make install
+sudo systemctl start python-systemd-http-server
