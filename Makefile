@@ -1,7 +1,10 @@
-.PHONY = jenkins server
+.PHONY = jenkins server down
 
 jenkins:
-	terraform apply -var-file=variables/jenkins.tfvars
+	terraform apply -auto-approve -var-file=variables/jenkins.tfvars
 
 server:
-	terraform apply -var-file=variables/pythonserver.tfvars
+	terraform apply -auto-approve -var-file=variables/pythonserver.tfvars
+
+down:
+	terraform destroy -auto-approve

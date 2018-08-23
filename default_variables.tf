@@ -2,6 +2,10 @@ variable "name" {
 	 type = "string"
 	 default = "default"
 }
+variable "project" {
+	 type = "string"
+	 default = "steam-bruin-214108"
+}
 
 variable "machine_type" {
 	 type = "string"
