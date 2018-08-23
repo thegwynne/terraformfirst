@@ -1,10 +1,8 @@
 .PHONY = jenkins server down
-
+tmp=$PWD
 jenkins:
-	terraform apply -auto-approve -var-file=variables/jenkins.tfvars
-
+	/home/gwynne/Dropbox/Nimbus/qa/week6/installscripts/jenkins.sh
 server:
-	terraform apply -auto-approve -var-file=variables/pythonserver.tfvars
-
-down:
+	/home/gwynne/Dropbox/Nimbus/qa/week6/installscripts/server.sh
+alldown:
 	terraform destroy -auto-approve
