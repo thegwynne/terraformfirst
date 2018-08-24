@@ -4,5 +4,5 @@ jenkins:
 	/home/gwynne/Dropbox/Nimbus/qa/week6/installscripts/jenkins.sh
 server:
 	/home/gwynne/Dropbox/Nimbus/qa/week6/installscripts/server.sh
-alldown:
-	terraform destroy -auto-approve
+alldown:	
+	/home/gwynne/Dropbox/Nimbus/qa/week6/installscripts/removeall.sh
