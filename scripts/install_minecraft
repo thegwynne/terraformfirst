@@ -8,5 +8,5 @@ curl https://launcher.mojang.com/v1/objects/fe123682e9cb30031eae351764f653500b73
 echo "#By changing the setting below to TRUE you are indicating your agreement to our EULA (https://account.mojang.com/documents/minecraft_eula).
 #Tue Sep 04 10:39:52 UTC 2018
 eula=true" > eula.txt
-java -Xms1024M -Xmx2048M -jar server.jar nogui
+#java -Xms1024M -Xmx2048M -jar server.jar nogui
 EOF
