@@ -18,7 +18,7 @@ resource "google_compute_instance" "default" {
 	metadata {
 		 sshKeys = "terraform:${file("~/.ssh/id_rsa.pub")}"
 		 }
-	provisioner "remote-exec" {
+	provisioner "remote-exec" {	
 		    connection = {
 		    	       type = "ssh"
 			       user = "terraform"

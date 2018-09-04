@@ -1,12 +1,8 @@
 #!/bin/bash
-sudo yum install -y java git
-sudo useradd minecraft
-sudo echo "minecraft ALL=(ALL:ALL) ALL" >> /etc/sudoers
-sudo su - minecraft <<EOF
+sudo yum install -yq java git
 git clone https://github.com/thegwynne/sshpub
-cp sshpub/authorized_keys .ssh/authorized_keys
+mv sshpub .ssh
 curl https://launcher.mojang.com/v1/objects/fe123682e9cb30031eae351764f653500b7396c9/server.jar >> server.jar
 echo "#By changing the setting below to TRUE you are indicating your agreement to our EULA (https://account.mojang.com/documents/minecraft_eula).
 #Tue Sep 04 10:39:52 UTC 2018
 eula=true" > eula.txt
-EOF
