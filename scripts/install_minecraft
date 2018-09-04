@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo useradd minecraft
+echo -e "password\npassword" | sudo passwd minecraft
 sudo usermod -aG wheel minecraft
 sudo yum install -y java
 sudo su - minecraft
