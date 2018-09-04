@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo yum install -y java
+sudo yum install git
 git clone https://github.com/thegwynne/sshpub
 cp sshpub/authorized_keys .ssh/authorized_keys
 curl https://launcher.mojang.com/v1/objects/fe123682e9cb30031eae351764f653500b7396c9/server.jar >> server.jar
