@@ -8,3 +8,7 @@ minecraft:
 	/home/gwynne/Dropbox/Nimbus/qa/week6/installscripts/minecraft.sh
 alldown:	
 	/home/gwynne/Dropbox/Nimbus/qa/week6/installscripts/removeall.sh
+git:
+	git add *
+	git commit -m "auto-message"
+	git push
